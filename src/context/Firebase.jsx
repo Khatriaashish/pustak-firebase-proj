@@ -11,12 +11,12 @@ import {
 import { createContext, useContext, useEffect, useState } from "react";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDnKAFiH9F8fQXJ-mhEvpz8TQH_vCxnlOU",
-  authDomain: "pustak-f758a.firebaseapp.com",
-  projectId: "pustak-f758a",
-  storageBucket: "pustak-f758a.appspot.com",
-  messagingSenderId: "626265947460",
-  appId: "1:626265947460:web:4eee6f16522df7bffe6b11",
+  apiKey: import.meta.env.apiKey,
+  authDomain: import.meta.env.authDomain,
+  projectId: import.meta.env.projectId,
+  storageBucket: import.meta.env.storageBucket,
+  messagingSenderId: import.meta.env.messagingSenderId,
+  appId: import.meta.env.appId,
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
