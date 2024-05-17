@@ -61,10 +61,10 @@ const Register = () => {
             placeholder="Password"
             isInvalid={!!errors.password}
           />
+          <Form.Control.Feedback type="invalid">
+            {errors.password?.message}
+          </Form.Control.Feedback>
         </Form.Group>
-        <Form.Control.Feedback type="invalid">
-          {errors.password?.message}
-        </Form.Control.Feedback>
         <Button variant="primary" type="submit">
           Sign Up
         </Button>
